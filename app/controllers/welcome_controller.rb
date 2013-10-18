@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
   	require 'snoo'
   	reddit = Snoo::Client.new
   	debugger
-  	@foo = reddit.search('bitcoin', opts = {})
+  	@foo = reddit.search('bitcoin', opts = {:sort => "new, relevance, top"})
    end
   end
 

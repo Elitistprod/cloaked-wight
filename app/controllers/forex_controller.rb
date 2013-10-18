@@ -6,7 +6,7 @@ def forex
   	require 'snoo'
   	reddit = Snoo::Client.new
   	debugger
-  	@forex = reddit.search('forex', opts = {})
+  	@forex = reddit.search('forex', opts = {:sort => "new, relevance, top"})
   end
 end
 
